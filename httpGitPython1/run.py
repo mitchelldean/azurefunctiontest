@@ -1,3 +1,4 @@
+
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'lib')))
 
@@ -8,6 +9,10 @@ from AzureHTTPHelper import HTTPHelper
 http = HTTPHelper()
 
 # All these print statements get sent to the Azure Functions live log
+print "--- Version ---"
+print sys.version_info
+print
+
 print "--- GET ---"
 print http.get
 print
